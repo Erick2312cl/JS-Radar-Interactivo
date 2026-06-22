@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+
+.panel-control {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  width: 300px;
+}
+
+input, button {
+  display: block;
+  width: 90%;
+  margin-bottom: 15px;
+  padding: 8px;
+}
+
+/* EL SECRETO ESTÁ ACÁ */
+#cajaRoja {
+  width: 250px;
+  height: 100px;
+  background-color: #d9534f;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 35px;
+  box-sizing: border-box;
+  
+  /* Para que top y left funcionen en CSS, la caja DEBE tener posición absoluta o relativa */
+  position: absolute; 
+  top: 300px; /* Posición inicial */
+  left: 20px; /* Posición inicial */
+  
+  transition: all 0.5s ease; /* Esto hace que se mueva como una animación suave */
+}
